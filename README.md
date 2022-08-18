@@ -1,16 +1,5 @@
-# gojek_clone
+# Gojek Clone Applicaton 
 
-A new Flutter project.
+made on 18/08/2022
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Group 1](https://user-images.githubusercontent.com/94110205/185353022-fbfd82b3-5805-4644-9661-6b2d009f4694.png)
