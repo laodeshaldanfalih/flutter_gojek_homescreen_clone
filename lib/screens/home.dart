@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:gojek_clone/widgets/widgets.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
   @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // bottomNavigationBar: CustomNavigationBar(),
       // bottomNavigationBar: BottomNavigationBar(items: []),
       appBar: AppBar(
         elevation: 0,
@@ -43,32 +49,66 @@ class Home extends StatelessWidget {
         ],
       ),
       // ===================== BODY ========================== //
-      body: Column(
+      body: ListView(
+        physics: ClampingScrollPhysics(),
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Column(children: const [
-              SizedBox(
-                height: 15,
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Column(children: const [
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Wallet(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  MainMenu(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  XpBar(),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  // Wallet(),
+                ]),
               ),
-              Wallet(),
-              SizedBox(
+              const Padding(
+                padding: EdgeInsets.only(left: 20),
+                child: Addition(),
+              ),
+              const SizedBox(
                 height: 20,
               ),
-              MainMenu(),
-              SizedBox(
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                child: Text(
+                  'Stars for your orders, please',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                ),
+              ),
+              const SizedBox(
                 height: 20,
               ),
-              XpBar(),
-              SizedBox(
-                height: 20,
+              const Padding(
+                padding: EdgeInsets.only(left: 20),
+                child: Rating(),
               ),
-              // Wallet(),
-            ]),
-          ),
-          const Padding(
-            padding: EdgeInsets.only(left: 20),
-            child: Addition(),
+              const SizedBox(
+                height: 30,
+              ),
+              const Padding(
+                padding: EdgeInsets.only(left: 20),
+                child: Banners(),
+              ),
+              Container(
+                height: 20,
+                color: Colors.transparent,
+              )
+            ],
           ),
         ],
       ),

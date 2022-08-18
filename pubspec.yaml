@@ -65,6 +65,18 @@ flutter:
     - assets/images/GoPulsa.png
     - assets/images/GoRide.png
     - assets/images/GoSend.png
+    - assets/images/gocluppoinbar.png
+    - assets/images/GO-CLUB1.png
+    - assets/images/icon gofood flat.png
+    - assets/images/icon voucher.png
+    - assets/images/driver1.jpeg
+    - assets/images/driver2.jpeg
+    - assets/images/beranda.png
+    - assets/images/chat.png
+    - assets/images/promo.png
+    - assets/images/pesanan.png
+    - assets/images/banner.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

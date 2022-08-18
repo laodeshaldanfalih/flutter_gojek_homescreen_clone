@@ -14,12 +14,16 @@ class MainMenu extends StatelessWidget {
             children: [
               Column(
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 178, 217, 180),
-                        borderRadius: BorderRadius.circular(10)),
-                    height: 50,
-                    width: 50,
+                  GestureDetector(
+                    onTap: () => print('GoRide'),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          borderRadius: BorderRadius.circular(10)),
+                      height: 60,
+                      width: 60,
+                      child: Image.asset('assets/images/GoRide.png'),
+                    ),
                   ),
                   const SizedBox(
                     height: 5,
@@ -29,12 +33,16 @@ class MainMenu extends StatelessWidget {
               ),
               Column(
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 178, 217, 180),
-                        borderRadius: BorderRadius.circular(10)),
-                    height: 50,
-                    width: 50,
+                  GestureDetector(
+                    onTap: () => print('GoCar'),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          borderRadius: BorderRadius.circular(10)),
+                      height: 60,
+                      width: 60,
+                      child: Image.asset('assets/images/GoCar.png'),
+                    ),
                   ),
                   const SizedBox(
                     height: 5,
@@ -44,12 +52,16 @@ class MainMenu extends StatelessWidget {
               ),
               Column(
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 248, 200, 194),
-                        borderRadius: BorderRadius.circular(10)),
-                    height: 50,
-                    width: 50,
+                  GestureDetector(
+                    onTap: () => print('GoFood'),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          borderRadius: BorderRadius.circular(10)),
+                      height: 60,
+                      width: 60,
+                      child: Image.asset('assets/images/GoFood.png'),
+                    ),
                   ),
                   const SizedBox(
                     height: 5,
@@ -59,12 +71,16 @@ class MainMenu extends StatelessWidget {
               ),
               Column(
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 178, 217, 180),
-                        borderRadius: BorderRadius.circular(10)),
-                    height: 50,
-                    width: 50,
+                  GestureDetector(
+                    onTap: () => print('GoSend'),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          borderRadius: BorderRadius.circular(10)),
+                      height: 60,
+                      width: 60,
+                      child: Image.asset('assets/images/GoSend.png'),
+                    ),
                   ),
                   const SizedBox(
                     height: 5,
@@ -83,12 +99,16 @@ class MainMenu extends StatelessWidget {
             children: [
               Column(
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 248, 200, 194),
-                        borderRadius: BorderRadius.circular(10)),
-                    height: 50,
-                    width: 50,
+                  GestureDetector(
+                    onTap: () => print('GoMart'),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          borderRadius: BorderRadius.circular(10)),
+                      height: 60,
+                      width: 60,
+                      child: Image.asset('assets/images/GoMart.png'),
+                    ),
                   ),
                   const SizedBox(
                     height: 5,
@@ -98,12 +118,16 @@ class MainMenu extends StatelessWidget {
               ),
               Column(
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 149, 214, 223),
-                        borderRadius: BorderRadius.circular(10)),
-                    height: 50,
-                    width: 50,
+                  GestureDetector(
+                    onTap: () => print('GoPulsa'),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          borderRadius: BorderRadius.circular(10)),
+                      height: 60,
+                      width: 60,
+                      child: Image.asset('assets/images/GoPulsa.png'),
+                    ),
                   ),
                   const SizedBox(
                     height: 5,
@@ -113,12 +137,15 @@ class MainMenu extends StatelessWidget {
               ),
               Column(
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 189, 183, 234),
-                        borderRadius: BorderRadius.circular(10)),
-                    height: 50,
-                    width: 50,
+                  GestureDetector(
+                    onTap: () => print('GoClub'),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 214, 150, 235),
+                          borderRadius: BorderRadius.circular(10)),
+                      height: 50,
+                      width: 50,
+                    ),
                   ),
                   const SizedBox(
                     height: 5,
@@ -128,67 +155,74 @@ class MainMenu extends StatelessWidget {
               ),
               Column(
                 children: [
-                  Container(
-                      decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 220, 228, 228),
-                        borderRadius: BorderRadius.circular(100),
-                      ),
-                      height: 50,
-                      width: 50,
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 10, vertical: 12),
-                        child: Column(
-                          children: [
-                            Row(
-                              children: [
-                                Container(
-                                  height: 13,
-                                  width: 13,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(100),
-                                      color:
-                                          Color.fromARGB(255, 105, 109, 119)),
-                                ),
-                                const SizedBox(
-                                  width: 3,
-                                ),
-                                Container(
-                                  height: 13,
-                                  width: 13,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(100),
-                                      color:
-                                          Color.fromARGB(255, 105, 109, 119)),
-                                )
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Container(
-                                  height: 13,
-                                  width: 13,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(100),
-                                      color:
-                                          Color.fromARGB(255, 105, 109, 119)),
-                                ),
-                                const SizedBox(
-                                  width: 3,
-                                ),
-                                Container(
-                                  height: 13,
-                                  width: 13,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(100),
-                                      color:
-                                          Color.fromARGB(255, 105, 109, 119)),
-                                )
-                              ],
-                            )
-                          ],
+                  GestureDetector(
+                    onTap: () => print('More'),
+                    child: Container(
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 220, 228, 228),
+                          borderRadius: BorderRadius.circular(100),
                         ),
-                      )),
+                        height: 50,
+                        width: 50,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 10, vertical: 12),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Container(
+                                    height: 13,
+                                    width: 13,
+                                    decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(100),
+                                        color:
+                                            Color.fromARGB(255, 105, 109, 119)),
+                                  ),
+                                  const SizedBox(
+                                    width: 3,
+                                  ),
+                                  Container(
+                                    height: 13,
+                                    width: 13,
+                                    decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(100),
+                                        color:
+                                            Color.fromARGB(255, 105, 109, 119)),
+                                  )
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Container(
+                                    height: 13,
+                                    width: 13,
+                                    decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(100),
+                                        color:
+                                            Color.fromARGB(255, 105, 109, 119)),
+                                  ),
+                                  const SizedBox(
+                                    width: 3,
+                                  ),
+                                  Container(
+                                    height: 13,
+                                    width: 13,
+                                    decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(100),
+                                        color:
+                                            Color.fromARGB(255, 105, 109, 119)),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        )),
+                  ),
                   const SizedBox(
                     height: 5,
                   ),

@@ -28,7 +28,7 @@ class _WalletState extends State<Wallet> {
               padding: const EdgeInsets.only(bottom: 15),
               child: SingleChildScrollView(
                 reverse: true,
-                physics: const ClampingScrollPhysics(),
+                // physics: const ClampingScrollPhysics(),
                 child: Column(
                   children: [
                     Padding(
